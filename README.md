@@ -42,7 +42,7 @@ python preprocess_analysis_bed.py --b <input bed file> --gtf <input annotated gf
 
 
 
-LACONv returns for each sample the files:
+LACONv returns for each sample the following files:
 
 
 
