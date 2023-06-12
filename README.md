@@ -2,15 +2,15 @@
 
 
 
-LACONv has been developed to characterize copy number variations (i.e. deletion or duplication) in samples generated with short-read targeted sequencing kits.
+LACONv has been developed to characterize copy number variations (i.e. deletion and duplication) in samples sequenced with short-read targeted kits.
 
 CNVs are identified on exons within the region of interest using their normalized read depth. LACONv does not require a reference sample set, as each sample plays the role of a control for the remaining set.
 
-Each exon has a dosage value and its corresponding z-value with respect to to the reference set. Value cutoffs are determined under the assumption that the samples carry very rare CNVs and the whole sample set is not homogeneous, although it is possible to incorporate relatives within the set of samples to be tested. However, the inclusion of samples with suspected recurrent CNVs is not recommended.
+For each exon it is calculated a dosage value and its corresponding z-value with respect to the dosage distribution of the 'reference' set. Cutoffs are determined under the assumption that the samples carry very rare CNVs and the whole sample set is not homogeneous, although it is possible to include relatives within the set of samples to be tested. However, the inclusion of samples with suspected recurrent CNVs is not recommended.
 
-The chromosomal sex of each sample must be determined to divide the samples into two groups in order to characterize CNVs on X and Y chromosomes. If there is no possibility of perform sexing, CNVs on chrX and chrY are not returned.
+The chromosomal sex of each sample must be determined to divide the samples into two groups in order to characterize CNVs on X and Y chromosomes. If there is no possibility of perform sexing, CNVs on chrX and chrY are not calculated.
 
-Also, if the size of sample set is very scarce or sample read depth is very poor, CNVs can not be characterized. Samples with low read depth are not considered as well as exons whose depth along the sample set is under some threshold.
+Also, if the size of sample set is too scarce or sample read depth is very poor, CNVs can not be characterized. Samples with low read depth are not considered as well as exons whose depth along the sample set is under some threshold.
 
 The name of the samples and exons that are filtered out are registered in a log file in order to get track of the process.
 
