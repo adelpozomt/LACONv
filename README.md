@@ -16,10 +16,6 @@ The name of the samples and exons that are filtered out are registered in a log 
 
 
 
-LACONv has been developed by Ángela del Pozo ([ORCID code](https://orcid.org/my-orcid?orcid=0000-0001-6690-1619)) from the Instituto de Genética Médica y Molecular (INGEMM), Hospital Universitario La Paz (Madrid).
-
-
-
 ## Input data
 
 
